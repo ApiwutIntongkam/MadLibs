@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mrs. Lynn's Mad Libs</title>
+        <link rel="stylesheet" href="style.css">
+      
+    </head>
+    
+    <body>
+        
+        <h1 class="glow", id="id">Never gonna give you up</h1>
+           <h2 class="glow"> We're no strangers to <span id="ONE"> </span></h2>
+           <h2 class="glow"> You know the <span id="TWO"></span> and so do I</h2> 
+            <h2 class="glow">A full commitment's what I'm <span id="THREE"> </span> of</h2>
+            <h2 class="glow">You wouldn't <span id="FOUR"></span> this from any other guy</h2> 
+            <h2 class="glow">I just wanna tell you how I'm <span id="FIVE"></span></h2>
+           <h2 class="glow"> Gotta make you <span id="SIX"> </span></h2>
+           <h2 class="glow"> Never gonna give you <span id="SEVEN"> </span></h2>
+           <h2 class="glow"> Never gonna let you <span id="EIGHT"></span></h2>
+           <h2 class="glow"> Never gonna run around and <span id="NINE"></span> you</h2>
+           <h2 class="glow"> Never gonna make you <span id="TEN"></span></h2>
+           <h2 class="glow"> Never gonna say <span id="ELEVEN"></span></h2>
+           <h2 class="glow"> Never gonna tell a lie and <span id="TWELVE"></span> you</h2>
+            
+
+    
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+            (function() {
+                    function refreshCSS() {
+                            var sheets = [].slice.call(document.getElementsByTagName("link"));
+                            var head = document.getElementsByTagName("head")[0];
+                            for (var i = 0; i < sheets.length; ++i) {
+                                    var elem = sheets[i];
+                                    head.removeChild(elem);
+                                    var rel = elem.rel;
+                                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                    }
+                                    head.appendChild(elem);
+                            }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + 'ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function(msg) {
+                            if (msg.data == 'reload') window.location.reload();
+                            else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    console.log('Live reload enabled.');
+            })();
+    }
+    // ]]>
+</script></body>
+
+      <script>
+        //Build the prompts and set them equal to variables so can use them later.
+           
+        var one = document.getElementById("ONE");
+        var two = document.getElementById("TWO");
+        var three = document.getElementById("THREE");
+        var four = document.getElementById("FOUR");
+        var five = document.getElementById("FIVE");
+        var six = document.getElementById("SIX");
+        var seven = document.getElementById("SEVEN");
+        var eight = document.getElementById("EIGHT");
+        var nine = document.getElementById("NINE");
+        var ten = document.getElementById("TEN");
+        var eleven = document.getElementById("ELEVEN");
+        var twelve = document.getElementById("TWELVE");
+       
+    
+
+
+        var love=prompt("an intense feeling of deep affection.");
+        var rule=prompt("one of a set of explicit or understood regulations or principles governing conduct within a particular activity or sphere.");
+        var thinking=prompt("the process of using one's mind to consider or reason about something.");
+        var gett=prompt("other word for recieve");
+        var feeling = prompt("an emotional state");
+        var understand=prompt("perceive the intended meaning of something");
+        var up = prompt("what's the opposite of down");
+        var down = prompt("what's the opposite of up");
+        var desert = prompt("what's a place full of sand called");
+        var cry = prompt("what do you do when you feel bad");
+        var goodbye = prompt("What's the other word for farewell");
+        var hurt = prompt("What's happen when you break your little finger")
+
+        one.innerHTML = love;
+        two.innerHTML = rule;
+        three.innerHTML = thinking;
+        four.innerHTML = gett;
+        five.innerHTML = feeling;
+        six.innerHTML = understand;
+        seven.innerHTML = up;
+        eight.innerHTML = down;
+        nine.innerHTML = desert;
+        ten.innerHTML = cry;
+        eleven.innerHTML = goodbye;
+        twelve.innerHTML = hurt;
+    
+
+        </script>
+</html>
